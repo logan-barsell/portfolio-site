@@ -49,8 +49,7 @@
     </div>
 
 
-    <nav id="navigation" class="navbar navbar-expand-lg">
-      <a class="navbar-brand" href="#">Logan Barsell</a>
+    <nav id="navigation" class="navbar sticky-top navbar-expand-sm">
 
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon">
@@ -59,21 +58,21 @@
       </button>
 
       <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
+        <ul class="navbar-nav justify-content-center">
           <li class="nav-item active">
-            <a class="nav-link" href="#about">About Me<span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="#about">ABOUT ME<span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#skills">Skills</a>
+            <a class="nav-link" href="#skills">SKILLS</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#stats">Stats</a>
+            <a class="nav-link" href="#stats">STATS</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#contact">Contact</a>
+            <a class="nav-link" href="#contact">CONTACT</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#portfolio">Portfolio</a>
+            <a class="nav-link" href="#portfolio">PORTFOLIO</a>
           </li>
         </ul>
       </div>
@@ -82,20 +81,29 @@
 
     <div id="about" class="section">
       <div class="container">
-        <div class="row">
-          <div class="col-md-5">
+        <div class="row align-items-center">
+          <div class="col-md-5 col-sm-6 offset-sm-3 offset-md-0">
             <img class="aboutImg" src="css/images/bio.jpg">
           </div>
           <div class="col-md-7">
-            <h4>My name is Logan Barsell</h4>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, architecto dicta sequi, error natus ut deserunt dolorem quia perferendis quasi vitae aliquid atque. Ab voluptatem nulla quaerat minima assumenda nostrum.
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo voluptatibus sed iusto eum eos sint cumque. Nostrum nam cupiditate harum, iusto placeat delectus similique! Voluptates illum sapiente necessitatibus quas aut!
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis, numquam sapiente id voluptate harum ratione neque dolor cumque! Quos illo voluptatum cum distinctio porro minima omnis earum aspernatur. Neque, iusto?
+            <h1 class="display-4 text-center">HELLO,</h1>
+            <h4 class="text-center">my name is Logan Barsell.</h4>
+            <dl class="row text-center">
+              <dt class="col-sm-3">Location</dt>
+              <dd class="col-sm-9">East San Francisco Bay Area</dd>
+              <dt class="col-sm-3">Born</dt>
+              <dd class="col-sm-9">March 19th, 1997</dd>
+            </dl>
+            <p class="text-center">
+              I am a creative and inspired web developer, always seeking new technologies to add to my repertoire.
+              As a student, my drive and passion to learn takes me to new and exciting places.
+              In my professional endeavors, I always put my best foot forward.
             </p>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum dolore laborum hic fugiat, tempore cum dolorem temporibus mollitia, iste quo deleniti dolores quas, veritatis molestias? Accusamus nihil molestiae sed molestias.
-            </p>
+            <div class="socialMedia text-center">
+              <i class="fas fa-paper-plane"></i>
+              <i class="fab fa-github"></i>
+              <i class="fab fa-linkedin-in"></i>
+            </div>
           </div>
         </div>
       </div>
@@ -104,22 +112,54 @@
 
     <div id="skills" class="skillsSection section">
       <div class="container">
-        <div class="row">
           <div class="col-md-12 text-center">
-            <h2>TECHNICAL SKILLS</h2>
-            <p>A representation of my proficiency in each skill</p>
+            <h2>MY SKILLS</h2>
+            <p>Technologies in which I am proficient</p>
           </div>
-            <div class="owl-carousel owl-theme">
-              <div class="skill">
-                <span class="chart" data-percent="67">
-                  <span class="percent">67</span>
-                  <canvas height="152" width="152"></canvas>
-                </span>
-                <h4>HTML</h4>
-                <p>5 years of experience</p>
+            <div class="skillCont row">
+
+              <div class="col-sm-6 col-md-4">
+                <div class="skill">
+                  <span class="iconify" data-icon="vscode-icons:file-type-html" data-width="100"></span>
+                  <p>HTML</p>
+                </div>
               </div>
-          </div>
-        </div>
+              <div class="col-sm-6 col-md-4">
+                <div class="skill">
+                  <span class="iconify" data-icon="vscode-icons:file-type-css" data-width="100"></span>
+
+                  <p>CSS</p>
+                </div>
+              </div>
+              <div class="col-sm-6 col-md-4">
+                <div class="skill">
+                  <span class="iconify" data-icon="logos:javascript" data-width="100"></span>
+                  <p>JavaScript</p>
+                </div>
+              </div>
+              <div class="col-sm-6 col-md-4">
+                <div class="skill">
+                  <span class="iconify" data-icon="logos:react" data-width="110"></span>
+  
+                  <p class="reactIcon">React</p>
+                </div>
+              </div>
+              <div class="col-sm-6 col-md-4">
+                <div class="skill">
+                  <span class="iconify" data-icon="logos:bootstrap" data-width="100"></span>
+  
+                  <p>Bootstrap</p>
+                </div>
+              </div>
+              <div class="col-sm-6 col-md-4">
+                <div class="skill">
+                  <span class="iconify" data-icon="logos:nodejs-icon" data-width="88"></span>
+  
+                  <p>Node.js</p>
+                </div>
+              </div>
+              
+            </div>
       </div>
     </div>
 
@@ -185,9 +225,9 @@
 
     <div id="contact" class="contactSection section">
       <div class="col-md-12 text-center">
-        <p class="subHeading">Like what you see?</p>
-        <h2>I'd love to hear from you</h2>
-        <a href="mailTo:loganjbars@gmail.com" class="contactButton">GET IN TOUCH!</a>
+        <p class="subHeading">Questions? Comments? Inquiries?</p>
+        <h2>Feel free to reach out!</h2>
+        <button type="button" class="btn btn-lg btn-outline-light">CONTACT ME</button>
       </div>
     </div>
 
@@ -199,34 +239,32 @@
             <h2>PORTFOLIO</h2>
           </div>
 
-          <div class="filter">
+          <!-- <div class="filter">
             <ul id="filters">
-              <li><a href="#" data-filter="*" class="current">ALL</a></li>
-              <li><a href="#" data-filter=".apps">Apps</a></li>
-              <li><a href="#" data-filter=".me">Me</a></li>
-              <li><a href="#" data-filter=".websites">Websites</a></li>
+              <li><button data-filter="*" type="button" class="active btn btn-outline-dark">ALL</button></li>
+              <li><button data-filter=".websites" type="button" class="btn btn-outline-dark">Websites</button></li>
+              <li><button data-filter=".projects" type="button" class="btn btn-outline-dark">Projects</button></li>
+            </ul>
+          </div> -->
+
+          <div class="filter">
+            <ul class="nav nav-tabs justify-content-center" id="filters" role="tablist">
+              <li class="nav-item">
+                <a data-filter="*" class="nav-link active" href="#" role="tab" aria-selected="true">All</a>
+              </li>
+              <li class="nav-item">
+                <a data-filter=".websites" class="nav-link" href="#" role="tab" aria-selected="false">Websites</a>
+              </li>
+              <li class="nav-item">
+                <a data-filter=".projects" class="nav-link" href="#" role="tab" aria-selected="false">Projects</a>
+              </li>
             </ul>
           </div>
 
           <div class="itemsContainer">
             <ul class="items row">
 
-              <li onclick="" class="apps col-xs-6 col-sm-4 col-md-3 col-lg-3">
-                <div class="item">
-                  <img src="css/images/portfolio/thumbnails/tnph.jpg">
-                  <div class="icons">
-                    <a class="open" href="css/images/portfolio/ph.jpg" title="View Image" data-fancybox data-caption="Website Preview">
-                      <i class="fa fa-search"></i>
-                    </a>
-                    <a class="projectLink" href="">
-                      <i class="fa fa-link" target="_blank"></i>
-                    </a>
-                  </div>
-                  <div class="imageOverlay"></div>
-                </div>
-              </li>
-
-              <li onclick="" class="me col-xs-6 col-sm-4 col-md-3 col-lg-3">
+              <li onclick="" class="websites col-xs-6 col-sm-4 col-md-3 col-lg-3">
                 <div class="item">
                   <img src="css/images/portfolio/thumbnails/tnph.jpg">
                   <div class="icons">
@@ -256,7 +294,7 @@
                 </div>
               </li>
 
-              <li onclick="" class="apps col-xs-6 col-sm-4 col-md-3 col-lg-3">
+              <li onclick="" class="websites col-xs-6 col-sm-4 col-md-3 col-lg-3">
                 <div class="item">
                   <img src="css/images/portfolio/thumbnails/tnph.jpg">
                   <div class="icons">
@@ -271,7 +309,22 @@
                 </div>
               </li>
 
-              <li onclick="" class="me col-xs-6 col-sm-4 col-md-3 col-lg-3">
+              <li onclick="" class="projects col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                <div class="item">
+                  <img src="css/images/portfolio/thumbnails/tnph.jpg">
+                  <div class="icons">
+                    <a class="open" href="css/images/portfolio/ph.jpg" title="View Image" data-fancybox data-caption="Website Preview">
+                      <i class="fa fa-search"></i>
+                    </a>
+                    <a class="projectLink" href="">
+                      <i class="fa fa-link" target="_blank"></i>
+                    </a>
+                  </div>
+                  <div class="imageOverlay"></div>
+                </div>
+              </li>
+
+              <li onclick="" class="projects col-xs-6 col-sm-4 col-md-3 col-lg-3">
                 <div class="item">
                   <img src="css/images/portfolio/thumbnails/tnph.jpg">
                   <div class="icons">
@@ -301,7 +354,7 @@
                 </div>
               </li>
 
-              <li onclick="" class="me col-xs-6 col-sm-4 col-md-3 col-lg-3">
+              <li onclick="" class="projects col-xs-6 col-sm-4 col-md-3 col-lg-3">
                 <div class="item">
                   <img src="css/images/portfolio/thumbnails/tnph.jpg">
                   <div class="icons">
@@ -316,7 +369,7 @@
                 </div>
               </li>
 
-              <li onclick="" class="websites col-xs-6 col-sm-4 col-md-3 col-lg-3">
+              <li onclick="" class="projects col-xs-6 col-sm-4 col-md-3 col-lg-3">
                 <div class="item">
                   <img src="css/images/portfolio/thumbnails/tnph.jpg">
                   <div class="icons">
@@ -352,7 +405,7 @@
     <script src="https://unpkg.com/isotope-layout@3.0.6/dist/isotope.pkgd.min.js"></script>
     <script src="js/countUp-jquery.js"></script>
     <script src="js/countUp.js"></script>
-    <script src="js/jquery.easypiechart.min.js"></script>
+    <script src="https://code.iconify.design/2/2.1.0/iconify.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/typed.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>

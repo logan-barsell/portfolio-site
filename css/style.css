@@ -4,7 +4,15 @@ body {
   color: #333;
   background-color: #fff;
   letter-spacing: 1px;
+  font-weight: 150;
 }
+
+h2,
+h3,
+h4 {
+  font-weight: 150;
+}
+
 .section {
   padding: 100px 0px;
 }
@@ -73,7 +81,7 @@ body {
 /* NAVIGATION SECTION */
 
 #navigation {
-  background-color: #e74c3c;
+  background-color: #333;
   padding: 20px 10px;
   z-index: 100;
   width: 100%;
@@ -97,12 +105,19 @@ body {
   box-shadow: 0, 0, 0, #fff;
 }
 
+.navbar-nav {
+  width: 100%;
+  text-align: center;
+}
+
 #navigation li {
   padding: 0px 10px;
 }
 
 #navigation li a {
   color: #fff;
+  font-size: 15px;
+  font-weight: 150;
 }
 
 .fixedNav #navigation {
@@ -113,43 +128,45 @@ body {
 /* ABOUT SECTION */
 .aboutImg {
   max-width: 100%;
+  padding-bottom: 50px;
+}
+
+h1.display-4 {
+  font-weight: 150;
+}
+
+dl {
+  padding-top: 15px;
+}
+
+.socialMedia i {
+  font-size: 35px;
+  letter-spacing: 3px;
+  padding-top: 3px;
 }
 
 /* SKILLS SECTION */
 
 .skillsSection,
 .contactSection {
-  background-color: #e74c3c;
+  background-color: #334;
   color: #fff;
+}
+
+.skillCont {
+  margin-top: 15px;
 }
 
 .skill {
   text-align: center;
 }
 
-.chart {
-  position: relative;
-  width: 152px;
-  height: 152px;
-  display: inline-block;
-  text-align: center;
+.skill svg {
+  width: 100px;
 }
 
-.chart canvas {
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
-.chart .percent {
-  color: #000;
-  line-height: 152px;
-  display: inline-block;
-  font-size: 35px;
-}
-
-.chart .percent:after {
-  content: '%';
+.skill p {
+  font-size: 25px;
 }
 
 /* STATS SECTION */
@@ -187,13 +204,13 @@ body {
 .squareContent h2 {
   font-size: 56px;
   margin-bottom: 10px;
-  font-weight: 400;
-  color: #e74c3c;
+  font-weight: 200;
+  color: #333;
 }
 
 .squareContent h3 {
   font-size: 13px;
-  font-weight: 600;
+  font-weight: 400;
   margin: 0;
 }
 
@@ -209,19 +226,14 @@ body {
 }
 
 /* CONTACT SECTION */
-.contactButton {
-  color: #fff;
-  padding: 15px 20px;
-  display: inline-block;
-  margin-top: 20px;
-  border: 1px solid #fff;
-  border-radius: 2px;
+
+.subHeading {
+  font-size: 15px;
+  margin-bottom: 0px;
 }
 
-.contactButton:hover {
-  text-decoration: none;
-  color: #e74c3c;
-  background-color: #fff;
+#contact button {
+  margin-top: 15px;
 }
 
 /* PORTFOLIO SECTION */
@@ -238,20 +250,21 @@ body {
 }
 
 .filter a {
-  color: #bdc3c7;
-  border: 1px solid #bdc3c7;
-  padding: 10px 18px;
-  display: block;
+  color: #333;
+  padding: 10px 13px;
+}
+
+.filter a:hover {
+  color: rgba(0, 0, 0, 0.4);
 }
 
 .filter li {
-  display: inline-block;
-  padding: 5px;
+  padding: 5px 5px 0px;
 }
 
 .filter .current {
-  background-color: #e74c3c;
-  border-color: #e74c3c;
+  background-color: #333;
+  border-color: #333;
   color: #fff;
 }
 
@@ -289,7 +302,7 @@ body {
 .items a {
   width: 40px;
   height: 40px;
-  background-color: #e74c3c;
+  background-color: #334;
   position: relative;
   display: inline-block;
   transition: all 0.2s linear, 0.2s;
