@@ -14,7 +14,7 @@ $(window).on('load', function() {
 $(document).ready(function() {
 
   $('#slides').superslides({
-    play: 5000,
+    play: 10000,
     animation: 'fade',
     pagination: false
   });
