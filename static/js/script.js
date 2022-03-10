@@ -13,6 +13,28 @@ $(window).on('load', function() {
 
 $(document).ready(function() {
 
+  const navLinks = document.querySelectorAll('.nav-item');
+  const menuToggle = document.getElementById('navbarNav');
+  const bsCollapse = new bootstrap.Collapse(menuToggle);
+  
+  navLinks.forEach((l) => {
+      l.addEventListener('click', () => { 
+        const windoww = $(window).width();
+        if (windoww < 575) {
+          bsCollapse.toggle();
+        }
+      });
+  });
+
+  $(document).click(function (event) {
+    var clickover = $(event.target);
+    var $navbar = $(".navbar-collapse");               
+    var _opened = $navbar.hasClass("show");
+    if (_opened === true && !clickover.hasClass("navbar-toggler")) {      
+        $navbar.collapse('hide');
+    }
+});
+
   $('#slides').superslides({
     play: 10000,
     animation: 'fade',
