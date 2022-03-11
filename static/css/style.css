@@ -375,3 +375,111 @@ dl {
 .copyrightSection p {
   margin: 0px;
 }
+
+.nav-link span {
+  position: relative;
+  display: block;
+  cursor: pointer;
+  max-width: max-content;
+  margin: auto;
+  padding: 0px 5px;
+}
+
+.nav-link span:before,
+.nav-link span:after {
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 1px;
+  top: 50%;
+  margin-top: -0.5px;
+  background: #fff;
+}
+
+.nav-link span:before {
+  left: -2.5px;
+}
+.nav-link span:after {
+  right: 2.5px;
+  background: #fff;
+  transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+.nav-link span:hover:before {
+  background: #fff;
+  width: 100%;
+  transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+.nav-link span:hover:after {
+  background: transparent;
+  width: 100%;
+  transition: 0s;
+}
+
+/* CONTACT BUTTONS */
+
+.titleMessage .btn {
+  display: block;
+  margin: 1em auto;
+  color: #fff;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 100;
+  line-height: 37px;
+  max-width: fit-content;
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
+  width: 100%;
+  transition: 1s;
+  opacity: 0.7;
+}
+
+.titleMessage .btn:hover {
+  text-decoration: none;
+  color: white;
+  opacity: 1;
+}
+
+.btn-1 {
+  font-weight: 100;
+}
+
+.btn-1 svg {
+  height: 45px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.btn-1 rect {
+  fill: none;
+  stroke: #fff;
+  stroke-width: 2;
+  stroke-dasharray: 422, 0;
+  transition: all 0.35s linear;
+}
+
+.btn-1:hover {
+  font-weight: 900;
+  letter-spacing: 1px;
+}
+
+.btn-1:hover rect {
+  stroke-width: 5;
+  stroke-dasharray: 15, 310;
+  stroke-dashoffset: 48;
+  transition: all 1.35s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+* {
+  transition-property: all;
+  transition-duration: 0.6s;
+  transition-timing-function: ease;
+}
+
+.titleMessage .container {
+  margin-top: 3em;
+}

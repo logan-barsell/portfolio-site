@@ -15,13 +15,13 @@ $(document).ready(function() {
 
   const navLinks = document.querySelectorAll('.nav-item');
   const menuToggle = document.getElementById('navbarNav');
-  const bsCollapse = new bootstrap.Collapse(menuToggle);
-  
   navLinks.forEach((l) => {
       l.addEventListener('click', () => { 
         const windoww = $(window).width();
         if (windoww < 575) {
+          const bsCollapse = new bootstrap.Collapse(menuToggle);
           bsCollapse.toggle();
+          console.log("toggled");
         }
       });
   });
@@ -33,7 +33,7 @@ $(document).ready(function() {
     if (_opened === true && !clickover.hasClass("navbar-toggler")) {      
         $navbar.collapse('hide');
     }
-});
+  });
 
   $('#slides').superslides({
     play: 10000,
@@ -57,21 +57,21 @@ $(document).ready(function() {
 
   $(window).scroll(function() {
 
-    if (window.pageYOffset > skillsTopOffset - $(window).height() + 200 ) {
-      $(function() {
-        $('.chart').easyPieChart({
-            easing: 'easeInOut',
-            barColor: '#fff',
-            trackColor: false,
-            scaleColor: false,
-            lineWidth: 4,
-            size: 152,
-            onStep: (from, to, percent) => {
-              $(this.el).find('.percent').text(Math.round(percent));
-            }
-        });
-      });
-    }
+    // if (window.pageYOffset > skillsTopOffset - $(window).height() + 200 ) {
+    //   $(function() {
+    //     $('.chart').easyPieChart({
+    //         easing: 'easeInOut',
+    //         barColor: '#fff',
+    //         trackColor: false,
+    //         scaleColor: false,
+    //         lineWidth: 4,
+    //         size: 152,
+    //         onStep: (from, to, percent) => {
+    //           $(this.el).find('.percent').text(Math.round(percent));
+    //         }
+    //     });
+    //   });
+    // }
 
     if (!countUpFinished && window.pageYOffset > statsTopOffset - $(window).height() + 200 ) {
       $('.counter').each(function() {
