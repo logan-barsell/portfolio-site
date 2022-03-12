@@ -42,16 +42,14 @@ a:hover {
   background: url('images/spinner.gif') center center no-repeat;
 }
 
-/* SLIDE SECTION */
-.slides-navigation {
-  z-index: 6;
-}
+/* CAROUSEL  */
 
-.slides-navigation i {
-  font-size: 27px;
-  color: white;
-  opacity: 0.3;
-  margin: 0px 10px;
+.carousel-item div {
+  height: 100vh;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  display: block;
 }
 
 .overlay {
@@ -83,8 +81,9 @@ a:hover {
   font-size: 50px;
 }
 
-.titleMessage .heading .sub {
+.titleMessage .heading p.sub {
   font-size: 23px;
+  height: 34.5px;
 }
 
 /* NAVIGATION SECTION */
@@ -242,8 +241,9 @@ dl {
   margin-bottom: 0px;
 }
 
-#contact button {
+#contact .btn {
   margin-top: 15px;
+  border-radius: 0px;
 }
 
 /* PORTFOLIO SECTION */
@@ -376,6 +376,11 @@ dl {
   margin: 0px;
 }
 
+.nav-tabs .nav-link {
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+}
+
 .nav-link span {
   position: relative;
   display: block;
@@ -432,8 +437,9 @@ dl {
   text-decoration: none;
   text-transform: uppercase;
   width: 100%;
-  transition: 1s;
+  transition: 0.6s;
   opacity: 0.7;
+  text-shadow: 1px 1px rgb(0 0 0 / 40%);
 }
 
 .titleMessage .btn:hover {
@@ -452,6 +458,10 @@ dl {
   position: absolute;
   top: 0;
   width: 100%;
+}
+
+.btn-1 svg:hover {
+  box-shadow: none;
 }
 
 .btn-1 rect {
@@ -474,7 +484,7 @@ dl {
   transition: all 1.35s cubic-bezier(0.19, 1, 0.22, 1);
 }
 
-* {
+.titleMessage * {
   transition-property: all;
   transition-duration: 0.6s;
   transition-timing-function: ease;

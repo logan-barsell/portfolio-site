@@ -3,7 +3,7 @@
   <head>
     <title>Logan Barsell - Web Developer</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" type="text/css" href="../static/css/superslides.css" />
+    <link rel="icon" href="https://img.icons8.com/color/48/000000/laptop--v1.png"/>
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css"
@@ -29,7 +29,7 @@
       <div class="inner"></div>
     </div>
 
-    <div id="slides">
+    <!-- <div id="slides">
       <div class="overlay"></div>
 
       <div class="slides-container">
@@ -71,6 +71,49 @@
           <i class="fas fa-chevron-circle-left"></i>
         </a>
       </nav>
+    </div> -->
+
+    <div id="myCarousel" class="carousel carousel-fade" data-bs-ride="carousel">
+
+      <div class="overlay"></div>
+
+      <div class="titleMessage">
+        <div class="heading">
+          <p class="main">LOGAN BARSELL</p>
+          <p class="sub typed"></p>
+        </div>
+
+
+        <div class="container">
+          <a href="tel:+19252627761" class="btn btn-1">
+            <svg>
+              <rect x="0" y="0" fill="none" width="100%" height="100%"/>
+            </svg>
+          925-262-7761
+          </a>
+
+          <a href="mailto:contact@loganbarsell.com" class="btn btn-1">
+            <svg>
+              <rect x="0" y="0" fill="none" width="100%" height="100%"/>
+            </svg>
+          contact@loganbarsell.com
+          </a>
+        </div>
+
+      </div>
+
+      <div class="carousel-inner">
+        <div class="carousel-item active w-100">
+         <div style="background-image: url('../static/css/images/pic3.jpg')"></div>
+        </div>
+        <div class="carousel-item w-100">
+          <div style="background-image: url('../static/css/images/pic2.jpg')"></div>
+         </div>
+         <div class="carousel-item w-100">
+          <div style="background-image: url('../static/css/images/pic1.jpg')"></div>
+         </div>
+      </div>
+
     </div>
 
     <nav id="navigation" class="navbar sticky-top navbar-expand-sm">
@@ -89,7 +132,7 @@
       </button>
 
       <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav justify-content-center">
+        <ul class="navigate navbar-nav justify-content-center">
           <li class="nav-item active">
             <a class="nav-link" href="#about">
               <span>ABOUT ME</span>
@@ -106,7 +149,7 @@
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#slides">
+            <a class="nav-link" href="#myCarousel">
               <span>CONTACT</span>
             </a>
           </li>
@@ -141,8 +184,8 @@
               professional endeavors, my determination and problem solving
               skills help me deliver my best on every project.
             </p>
-            <div class="socialMedia text-center">
-              <a href="mailto:contact@loganbarsell.com">
+            <div class="socialMedia text-center navigate">
+              <a href="#slides">
                 <i class="fas fa-paper-plane"></i>
               </a>
               <a
@@ -301,10 +344,10 @@
     </div>
 
     <div id="contact" class="contactSection section">
-      <div class="col-md-12 text-center">
+      <div class="navigate col-md-12 text-center">
         <p class="subHeading">Interested?</p>
         <h2>Feel free to reach out!</h2>
-        <a href="#slides">
+        <a href="#myCarousel">
           <button type="button" class="btn btn-lg btn-outline-light">
             CONTACT ME <i class="fas fa-paper-plane"></i>
           </button>
@@ -599,7 +642,6 @@
       </div>
     </div>
 
-    <script src="../static/js/plugins/jquery.superslides.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
     <script src="https://unpkg.com/isotope-layout@3.0.6/dist/isotope.pkgd.min.js"></script>
     <script src="../static/js/plugins/countUp-jquery.js"></script>

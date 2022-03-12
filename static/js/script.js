@@ -35,11 +35,10 @@ $(document).ready(function() {
     }
   });
 
-  $('#slides').superslides({
-    play: 10000,
-    animation: 'fade',
-    pagination: false
-  });
+  var myCarousel = document.querySelector('#myCarousel')
+  var carousel = new bootstrap.Carousel(myCarousel, {
+    interval: 7000
+  })
 
   var typed = new Typed('.typed', {
     strings: ['Web Developer'],
@@ -107,16 +106,15 @@ $(document).ready(function() {
     return false;
   });
 
-  $('#navigation li a').click(function(e) {
+  $('.navigate a').click(function(e) {
     e.preventDefault();
-
+    console.log(this);
     var targetElement = $(this).attr('href');
     var targetPosition = $(targetElement).offset().top;
-
+    
     $('html, body').animate({
       scrollTop: targetPosition - 50
     }, 400, 'linear')
   });
-
 
 });
