@@ -37,7 +37,7 @@ $(document).ready(function () {
 
   var myCarousel = document.querySelector('#myCarousel')
   new bootstrap.Carousel(myCarousel, {
-    interval: 7000
+    interval: 10000
   });
 
   new Typed('.typed', {

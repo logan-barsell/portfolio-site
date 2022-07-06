@@ -19,7 +19,7 @@ a {
 }
 
 a:hover {
-  color: #334;
+  color: rgb(51, 51, 68);
 }
 
 .section {
@@ -137,7 +137,12 @@ a:hover {
 /* ABOUT SECTION */
 .aboutImg {
   max-width: 100%;
-  padding-bottom: 50px;
+}
+
+@media screen and (max-width: 768px) {
+  .aboutImg {
+    padding-bottom: 70px;
+  }
 }
 
 h1.display-4 {
@@ -149,9 +154,19 @@ dl {
 }
 
 .socialMedia i {
-  font-size: 35px;
+  font-size: 40px;
   letter-spacing: 3px;
-  padding-top: 3px;
+  margin: 10px 3px;
+  padding: 7px;
+  -webkit-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+.socialMedia i:hover {
+  transform: scale(1.5);
+  opacity: 0.1;
 }
 
 /* SKILLS SECTION */
