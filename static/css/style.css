@@ -23,7 +23,7 @@ a:hover {
 }
 
 .section {
-  padding: 70px 0px;
+  padding: 100px 0px;
 }
 
 .loader {
@@ -58,7 +58,7 @@ a:hover {
   height: 100%;
   position: absolute;
   z-index: 3;
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.7);
 }
 
 .titleMessage {
